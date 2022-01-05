@@ -1,0 +1,159 @@
+<html>
+
+<head>
+	<script>
+		var name = prompt("Enter Name:");
+		var sname = prompt("Enter School Name:")
+		var year = prompt("Enter Year:")
+		var age = prompt("Enter Age:")
+		var rollno = prompt("Enter Roll No:")
+		var eng = prompt("Enter Marks ENGLISH:")
+		var urdu = prompt("Enter Marks URDU:")
+		var math = prompt("Enter Marks MATHEMATICS:")
+		var com = prompt("Enter Marks COMPUTER:")
+		var phy = prompt("Enter Marks PHYSICS:")
+		var chem = prompt("Enter Marks CHEMISTRY:")
+		var total = parseInt(eng) + parseInt(urdu) + parseInt(math) +
+			parseInt(com) + parseInt(phy) + parseInt(chem);
+		var avg = (parseInt(eng) + parseInt(urdu) + parseInt(math) +
+			parseInt(com) + parseInt(phy) + parseInt(chem)) / 6;
+		
+		var totalMarks = total;
+		var remarks;
+		var grade;
+		if (avg > 80 && avg <= 100) {
+			remarks = 'First Class';
+			grade = "A";
+		}
+		else if (avg > 60 && avg < 80) {
+			remarks = '2nd Class';
+			grade = "B";
+		}
+		else if (avg > 50 && avg < 60) {
+			remarks = 'Third Class';
+			grade = "C";
+		}
+		else {
+			remarks = "Fail";
+			grade = "F";
+
+		}
+	</script>
+	<style>
+		#a1 {
+
+			text-align: center;
+			border: solid 4px;
+			height: 90%;
+			width: 35%;
+		}
+
+		#a2 {
+			text-align: left;
+			height: 80%;
+			width: 45%;
+		}
+	</style>
+</head>
+
+<BODY>
+	<center>
+		<div id="a1">
+			<h1><u>Report</u></h1>
+			<table id="a2" border="2px">
+				<tr>
+					<th>Name</th>
+					<th>
+						<script>document.write(name);</script>
+					</th>
+				</tr>
+				<tr>
+					<th>School Name</th>
+					<th>
+						<script>document.write(sname);</script>
+					</th>
+				</tr>
+				<tr>
+					<th>Year</th>
+					<th>
+						<script>document.write(year);</script>
+					</th>
+				</tr>
+				<tr>
+					<th>Age</th>
+					<th>
+						<script>document.write(age);</script>
+					</th>
+				</tr> 
+				<tr>
+					<th>Roll No</th>
+					<th>
+						<script>document.write(rollno);</script>
+					</th>
+				</tr>
+				<tr>
+					<th>ENGLISH</th>
+					<th>
+						<script>document.write(eng);</script>
+					</th>
+				</tr>
+				<tr>
+					<th>URDU</th>
+					<th>
+						<script>document.write(urdu);</script>
+					</th>
+				</tr>
+				<tr>
+					<th>MATHEMATICS</th>
+					<th>
+						<script>document.write(math);</script>
+					</th>
+				</tr>
+				<tr>
+					<th>COMPUTER</th>
+					<th>
+						<script>document.write(com);</script>
+					</th>
+				</tr>
+				<tr>
+					<th>PHYSICS</th>
+					<th>
+						<script>document.write(phy);</script>
+					</th>
+				</tr>
+				<tr>
+					<th>CHEMISTRY</th>
+					<th>
+						<script>document.write(chem);</script>
+					</th>
+				</tr>
+				<tr>
+					<th>Total Marks</th>
+					<th>
+						<script>document.write(totalMarks);</script>
+					</th>
+				</tr>
+				<tr>
+					<th>Average Marks</th>
+					<th>
+						<script>document.write(avg);</script>
+					</th>
+				</tr>
+				<tr>
+					<th>Grade</th>
+					<th>
+						<script>document.write(grade);</script>
+					</th>
+				</tr>
+				<tr>
+					<th>Remarks</th>
+					<th>
+						<script>document.write(remarks);</script>
+					</th>
+				</tr>
+			</table>
+		</div>
+	</center>
+</BODY>
+
+</html>
